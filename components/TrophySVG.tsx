@@ -120,60 +120,42 @@ export function TrophySVG({ trophy, size = 200 }: TrophySVGProps) {
         fill="rgba(255, 255, 255, 0.1)"
       />
 
-      {/* Ícone SVG estilo RPG com fundo circular (insígnia) */}
+      {/* Ícone SVG estilo RPG */}
       <g transform={`translate(${width / 2}, ${height / 2 - 12})`}>
-        {/* Círculo de fundo da insígnia */}
-        <circle
-          cx="0"
-          cy="0"
-          r="28"
-          fill="rgba(255, 255, 255, 0.15)"
-          stroke="rgba(255, 255, 255, 0.3)"
-          strokeWidth="2"
-          filter={`url(#shadow-${trophy.level})`}
-        />
-        {/* Círculo interno para profundidade */}
-        <circle
-          cx="0"
-          cy="0"
-          r="24"
-          fill="rgba(255, 255, 255, 0.08)"
-        />
-        {/* Ícone */}
         <path
           d={getIconPath(trophy.icon)}
           fill="white"
           opacity="0.98"
           filter={`url(#glow-${trophy.level})`}
-          transform="scale(2.2) translate(-12, -12)"
+          transform="scale(2.8) translate(-12, -12)"
           style={{ mixBlendMode: 'normal' }}
         />
       </g>
 
       {/* Título - com quebra de linha para textos longos */}
-      {trophy.title.length > 18 ? (
+      {trophy.title.length > 16 ? (
         <>
           <text
             x={width / 2}
-            y={height - padding - 28}
-            fontSize="9"
+            y={height - padding - 30}
+            fontSize="8.5"
             fontWeight="700"
             textAnchor="middle"
             fill="white"
             opacity="0.98"
-            letterSpacing="0.2px"
+            letterSpacing="0.15px"
           >
             {trophy.title.split(' ').slice(0, Math.ceil(trophy.title.split(' ').length / 2)).join(' ')}
           </text>
           <text
             x={width / 2}
             y={height - padding - 18}
-            fontSize="9"
+            fontSize="8.5"
             fontWeight="700"
             textAnchor="middle"
             fill="white"
             opacity="0.98"
-            letterSpacing="0.2px"
+            letterSpacing="0.15px"
           >
             {trophy.title.split(' ').slice(Math.ceil(trophy.title.split(' ').length / 2)).join(' ')}
           </text>

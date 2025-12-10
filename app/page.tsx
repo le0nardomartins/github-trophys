@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { TrophyConfig } from '@/lib/trophy-levels';
+import { useState, Fragment } from 'react';
+import { TrophyConfig, trophyConfigs } from '@/lib/trophy-levels';
 import { TrophyRow } from '@/components/TrophySVG';
 import './page.css';
 
@@ -229,6 +229,52 @@ export default function Home() {
           <p>Digite um username do GitHub para ver os troféus!</p>
         </div>
       )}
+
+      {/* Seção de Requisitos */}
+      <div className="requirements-section">
+        <h2>
+          <svg className="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+          Requisitos para Cada Nível
+        </h2>
+        
+        <div className="requirements-grid">
+          {Object.entries(trophyConfigs).map(([category, configs]) => {
+            const categoryNames: Record<string, string> = {
+              commits: 'Commits',
+              stars: 'Estrelas',
+              repositories: 'Repositórios',
+              followers: 'Seguidores',
+              contributions: 'Contribuições',
+              'pull-requests': 'Pull Requests',
+              issues: 'Issues',
+              'developer-level': 'Nível de Desenvolvedor'
+            };
+
+            return (
+              <Fragment key={category}>
+                <div className="requirement-category">
+                  <h3>{categoryNames[category] || category}</h3>
+                  <div className="requirement-levels">
+                    {configs.map((config, index) => (
+                      <Fragment key={`${category}-${index}`}>
+                        <div className="requirement-level">
+                          <span className="level-name">{config.level.toUpperCase()}</span>
+                          <span className="level-threshold">
+                            {config.threshold === 0 ? 'Inicial' : `≥ ${config.threshold.toLocaleString()}`}
+                          </span>
+                        </div>
+                      </Fragment>
+                    ))}
+                  </div>
+                </div>
+              </Fragment>
+            );
+          })}
+        </div>
+      </div>
     </main>
   );
 }

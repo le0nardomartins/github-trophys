@@ -1,6 +1,7 @@
 /// <reference types="react" />
 
 declare namespace JSX {
+  interface Element extends React.ReactElement<any, any> {}
   interface IntrinsicElements {
     // HTML Elements
     main: React.HTMLAttributes<HTMLElement>;
