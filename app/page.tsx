@@ -183,7 +183,7 @@ export default function Home() {
               Veja o <a href="https://github.com/le0nardomartins/github-trophys" target="_blank" rel="noopener noreferrer" style={{color: '#2196f3', textDecoration: 'underline'}}>README</a> para mais informações.
             </p>
 
-            <div className="info-text" style={{background: '#e8f5e9', borderLeftColor: '#4caf50'}}>
+            <div className="info-text" style={{background: 'rgba(76, 175, 80, 0.15)', borderLeftColor: 'rgba(76, 175, 80, 0.4)'}}>
               <svg className="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="2" y1="12" x2="22" y2="12"/>
@@ -193,7 +193,7 @@ export default function Home() {
               Compartilhe a URL com seus amigos e colegas.
             </div>
 
-            <div className="info-text" style={{background: '#fff3e0', borderLeftColor: '#ff9800', marginTop: '1rem'}}>
+            <div className="info-text" style={{background: 'rgba(255, 152, 0, 0.15)', borderLeftColor: 'rgba(255, 152, 0, 0.4)', marginTop: '1rem'}}>
               <svg className="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                 <line x1="12" y1="8" x2="12" y2="12"/>

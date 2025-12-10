@@ -74,10 +74,34 @@ function generateTrophySVG(trophy: TrophyConfig, size: number = 200): string {
       <rect x="${padding / 2 + 5}" y="${padding / 2 + 5}" width="${width - padding - 10}" height="${height / 2 - padding / 2 - 5}" 
             rx="17" ry="17" fill="rgba(255, 255, 255, 0.1)" />
       <g transform="translate(${width / 2}, ${height / 2 - 12})">
-        <path d="${iconPath}" fill="white" opacity="0.98" filter="url(#glow-${trophy.level})" transform="scale(2.8) translate(-12, -12)" style="mix-blend-mode: normal;" />
+        <circle cx="0" cy="0" r="28" fill="rgba(255, 255, 255, 0.15)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" filter="url(#shadow-${trophy.level})" />
+        <circle cx="0" cy="0" r="24" fill="rgba(255, 255, 255, 0.08)" />
+        <path d="${iconPath}" fill="white" opacity="0.98" filter="url(#glow-${trophy.level})" transform="scale(2.2) translate(-12, -12)" style="mix-blend-mode: normal;" />
       </g>
-      <text x="${width / 2}" y="${height - padding - 22}" font-size="11" font-weight="700" 
-            text-anchor="middle" fill="white" opacity="0.98" letter-spacing="0.3px">${trophy.title}</text>
+      ${trophy.title.length > 18 ? `
+        <text x="${width / 2}" y="${height - padding - 28}" 
+              font-size="9" 
+              font-weight="700" 
+              text-anchor="middle" 
+              fill="white" 
+              opacity="0.98" 
+              letter-spacing="0.2px">${trophy.title.split(' ').slice(0, Math.ceil(trophy.title.split(' ').length / 2)).join(' ')}</text>
+        <text x="${width / 2}" y="${height - padding - 18}" 
+              font-size="9" 
+              font-weight="700" 
+              text-anchor="middle" 
+              fill="white" 
+              opacity="0.98" 
+              letter-spacing="0.2px">${trophy.title.split(' ').slice(Math.ceil(trophy.title.split(' ').length / 2)).join(' ')}</text>
+      ` : `
+        <text x="${width / 2}" y="${height - padding - 22}" 
+              font-size="11" 
+              font-weight="700" 
+              text-anchor="middle" 
+              fill="white" 
+              opacity="0.98" 
+              letter-spacing="0.3px">${trophy.title}</text>
+      `}
       <text x="${width / 2}" y="${height - padding - 6}" font-size="8" text-anchor="middle" 
             fill="rgba(255, 255, 255, 0.9)" letter-spacing="1.2px" font-weight="600">${trophy.level.toUpperCase()}</text>
     </svg>
