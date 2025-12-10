@@ -59,9 +59,10 @@ function generateTrophySVG(trophy: TrophyConfig, size: number = 200): string {
           <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.2" />
         </filter>
         <filter id="glow-${trophy.level}">
-          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+          <feGaussianBlur stdDeviation="2" result="coloredBlur" in="SourceAlpha"/>
+          <feOffset in="coloredBlur" dx="0" dy="0" result="offsetBlur"/>
           <feMerge>
-            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="offsetBlur"/>
             <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
@@ -73,7 +74,7 @@ function generateTrophySVG(trophy: TrophyConfig, size: number = 200): string {
       <rect x="${padding / 2 + 5}" y="${padding / 2 + 5}" width="${width - padding - 10}" height="${height / 2 - padding / 2 - 5}" 
             rx="17" ry="17" fill="rgba(255, 255, 255, 0.1)" />
       <g transform="translate(${width / 2}, ${height / 2 - 12})">
-        <path d="${iconPath}" fill="white" opacity="0.98" filter="url(#glow-${trophy.level})" transform="scale(2.8) translate(-12, -12)" />
+        <path d="${iconPath}" fill="white" opacity="0.98" filter="url(#glow-${trophy.level})" transform="scale(2.8) translate(-12, -12)" style="mix-blend-mode: normal;" />
       </g>
       <text x="${width / 2}" y="${height - padding - 22}" font-size="11" font-weight="700" 
             text-anchor="middle" fill="white" opacity="0.98" letter-spacing="0.3px">${trophy.title}</text>

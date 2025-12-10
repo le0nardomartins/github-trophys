@@ -70,9 +70,10 @@ export function TrophySVG({ trophy, size = 200 }: TrophySVGProps) {
           <feDropShadow dx="0" dy="3" stdDeviation="5" floodOpacity="0.3" />
         </filter>
         <filter id={`glow-${trophy.level}`}>
-          <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+          <feGaussianBlur stdDeviation="2" result="coloredBlur" in="SourceAlpha"/>
+          <feOffset in="coloredBlur" dx="0" dy="0" result="offsetBlur"/>
           <feMerge>
-            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="offsetBlur"/>
             <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
@@ -127,6 +128,7 @@ export function TrophySVG({ trophy, size = 200 }: TrophySVGProps) {
           opacity="0.98"
           filter={`url(#glow-${trophy.level})`}
           transform="scale(2.8) translate(-12, -12)"
+          style={{ mixBlendMode: 'normal' }}
         />
       </g>
 
