@@ -1,0 +1,7 @@
+# Arquivos e diretórios a ignorar no deploy da Vercel
+node_modules
+.next
+.git
+.env.local
+.env*.local
+
