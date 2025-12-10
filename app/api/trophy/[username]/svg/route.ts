@@ -40,7 +40,7 @@ function generateTrophySVG(trophy: TrophyConfig, size: number = 200): string {
       <text x="${width / 2}" y="${height - padding - 15}" font-size="14" font-weight="bold" 
             text-anchor="middle" fill="white" filter="url(#shadow)">${trophy.title}</text>
       <text x="${width / 2}" y="${height - padding - 2}" font-size="11" text-anchor="middle" 
-            fill="rgba(255, 255, 255, 0.9)" text-transform="uppercase">${trophy.level}</text>
+            fill="rgba(255, 255, 255, 0.9)">${trophy.level.toUpperCase()}</text>
     </svg>
   `.trim();
 }

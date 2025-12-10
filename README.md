@@ -2,93 +2,44 @@
 
 <div align="center">
 
-**Sistema de troféus personalizado e open-source para perfis do GitHub**
+**Sistema de troféus personalizado para perfis do GitHub**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/le0nardomartins/github-trophys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Serviço público e gratuito - Use diretamente no seu README!**
 
 </div>
 
 ---
 
-## 📖 Sobre o Projeto
+## 📖 Sobre
 
-GitHub Trophys é uma aplicação open-source que gera troféus SVG personalizados baseados nas atividades e métricas do GitHub. Diferente de outros sistemas que frequentemente saem do ar, este projeto permite que você hospede sua própria instância e tenha controle total sobre seus troféus.
+GitHub Trophys é um serviço público que gera troféus SVG personalizados baseados nas atividades e métricas do GitHub. Adicione troféus ao seu perfil do GitHub de forma simples e rápida!
 
-### ✨ Características Principais
+### ✨ Características
 
 - 🎯 **8 Categorias de Troféus**: Commits, Stars, Repositórios, Seguidores, Contribuições, Pull Requests, Issues e Nível do Desenvolvedor
 - 📊 **6 Níveis de Dificuldade**: Basic → Intermediate → Advanced → Expert → Master → Legendary
 - 🎨 **Design Moderno**: SVGs com gradientes, sombras e ícones personalizados
 - 🚀 **Fácil Integração**: Adicione uma única linha no seu README
 - ⚡ **API RESTful**: Endpoints completos para integração
-- 📱 **Interface Web**: Visualize seus troféus antes de adicionar ao README
-- 🔒 **Open Source**: Use, modifique e contribua livremente
-- 🌐 **Multi-usuário**: Qualquer pessoa pode usar sua instância
+- 🌐 **100% Gratuito**: Serviço público disponível para todos
 
 ---
 
-## 🚀 Instalação Rápida
-
-### Passo 1: Clone e Instale
-
-```bash
-git clone https://github.com/le0nardomartins/github-trophys.git
-cd github-trophys
-npm install
-```
-
-### Passo 2: Teste Localmente (Opcional)
-
-```bash
-npm run dev
-```
-
-Acesse `http://localhost:3000` no seu navegador para testar localmente.
-
-### Passo 3: Deploy na Vercel
-
-**Opção A: Via Interface Web (Recomendado)**
-
-1. Faça push do código para o GitHub
-2. Acesse [vercel.com](https://vercel.com)
-3. Clique em "New Project"
-4. Importe seu repositório
-5. A Vercel detectará automaticamente o Next.js
-6. Clique em "Deploy"
-7. Aguarde alguns minutos e sua aplicação estará no ar!
-
-**Opção B: Via CLI**
-
-```bash
-npm i -g vercel
-vercel
-```
-
-### Passo 4: Obtenha sua URL
-
-Após o deploy, você receberá uma URL como:
-```
-https://github-trophys-abc123.vercel.app
-```
-
-**Pronto!** Sua instância está funcionando e qualquer pessoa pode usar.
-
----
-
-## 📝 Como Usar no seu README
+## 🚀 Como Usar
 
 ### Uso Básico
 
 Adicione esta linha no seu `README.md`:
 
 ```markdown
-![GitHub Trophys](https://sua-url.vercel.app/api/trophy/SEU_USERNAME/svg)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg)
 ```
 
 **Exemplo real:**
 ```markdown
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/octocat/svg)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg)
 ```
 
 ### Personalização
@@ -96,13 +47,13 @@ Adicione esta linha no seu `README.md`:
 #### Exibir apenas o nível do desenvolvedor
 
 ```markdown
-![GitHub Trophys](https://sua-url.vercel.app/api/trophy/SEU_USERNAME/svg?format=single)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg?format=single)
 ```
 
 #### Exibir troféu de categoria específica
 
 ```markdown
-![GitHub Trophys](https://sua-url.vercel.app/api/trophy/SEU_USERNAME/svg?category=commits)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg?category=commits)
 ```
 
 **Categorias disponíveis:**
@@ -118,7 +69,7 @@ Adicione esta linha no seu `README.md`:
 ```markdown
 # Meu Perfil
 
-![GitHub Trophys](https://sua-url.vercel.app/api/trophy/SEU_USERNAME/svg)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg)
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SEU_USERNAME)
 ```
@@ -136,7 +87,7 @@ Desenvolvedor Full Stack
 
 ## 🏆 Troféus GitHub
 
-![GitHub Trophys](https://sua-url.vercel.app/api/trophy/joaosilva/svg)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/joaosilva/svg)
 ```
 
 ### Exemplo 2: README Completo
@@ -148,7 +99,7 @@ Desenvolvedor Full Stack
 
 ## 🏆 Troféus GitHub
 
-![GitHub Trophys](https://sua-url.vercel.app/api/trophy/mariasantos/svg)
+![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/mariasantos/svg)
 
 ## 📊 Estatísticas
 
@@ -160,7 +111,7 @@ Desenvolvedor Full Stack
 ```markdown
 ## Meu Nível de Desenvolvedor
 
-![Dev Level](https://sua-url.vercel.app/api/trophy/meuusuario/svg?format=single&category=developer-level)
+![Dev Level](https://github-trophys.vercel.app/api/trophy/meuusuario/svg?format=single&category=developer-level)
 ```
 
 ### Exemplo 4: Múltiplos Troféus
@@ -169,10 +120,10 @@ Desenvolvedor Full Stack
 ## Minhas Conquistas
 
 **Commits:**
-![Commits](https://sua-url.vercel.app/api/trophy/meuusuario/svg?format=single&category=commits)
+![Commits](https://github-trophys.vercel.app/api/trophy/meuusuario/svg?format=single&category=commits)
 
 **Stars:**
-![Stars](https://sua-url.vercel.app/api/trophy/meuusuario/svg?format=single&category=stars)
+![Stars](https://github-trophys.vercel.app/api/trophy/meuusuario/svg?format=single&category=stars)
 ```
 
 ### Exemplo 5: Layout em Grid
@@ -184,15 +135,15 @@ Desenvolvedor Full Stack
   <tr>
     <td align="center">
       <strong>Nível Geral</strong><br/>
-      <img src="https://sua-url.vercel.app/api/trophy/usuario/svg?format=single&category=developer-level" alt="Dev Level"/>
+      <img src="https://github-trophys.vercel.app/api/trophy/usuario/svg?format=single&category=developer-level" alt="Dev Level"/>
     </td>
     <td align="center">
       <strong>Commits</strong><br/>
-      <img src="https://sua-url.vercel.app/api/trophy/usuario/svg?format=single&category=commits" alt="Commits"/>
+      <img src="https://github-trophys.vercel.app/api/trophy/usuario/svg?format=single&category=commits" alt="Commits"/>
     </td>
     <td align="center">
       <strong>Stars</strong><br/>
-      <img src="https://sua-url.vercel.app/api/trophy/usuario/svg?format=single&category=stars" alt="Stars"/>
+      <img src="https://github-trophys.vercel.app/api/trophy/usuario/svg?format=single&category=stars" alt="Stars"/>
     </td>
   </tr>
 </table>
@@ -205,7 +156,7 @@ Desenvolvedor Full Stack
 ### Base URL
 
 ```
-https://sua-url.vercel.app
+https://github-trophys.vercel.app
 ```
 
 ### 1. GET `/api/trophy/[username]`
@@ -219,13 +170,13 @@ GET /api/trophy/{username}
 
 **Exemplo de Requisição:**
 ```bash
-curl https://sua-url.vercel.app/api/trophy/octocat
+curl https://github-trophys.vercel.app/api/trophy/le0nardomartins
 ```
 
 **Exemplo de Resposta:**
 ```json
 {
-  "username": "octocat",
+  "username": "le0nardomartins",
   "metrics": {
     "commits": 1250,
     "stars": 350,
@@ -274,16 +225,16 @@ GET /api/trophy/{username}/svg
 
 ```bash
 # Todos os troféus em linha
-curl https://sua-url.vercel.app/api/trophy/octocat/svg
+curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg
 
 # Apenas nível do desenvolvedor
-curl https://sua-url.vercel.app/api/trophy/octocat/svg?format=single
+curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg?format=single
 
 # Troféu de commits apenas
-curl https://sua-url.vercel.app/api/trophy/octocat/svg?category=commits
+curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg?category=commits
 
 # Troféu único de stars
-curl https://sua-url.vercel.app/api/trophy/octocat/svg?format=single&category=stars
+curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg?format=single&category=stars
 ```
 
 **Resposta:**
@@ -368,112 +319,11 @@ O nível do desenvolvedor é calculado com base em uma pontuação ponderada:
 
 ---
 
-## 🌐 Usando Instâncias Públicas
-
-Este projeto é open-source e qualquer pessoa pode fazer deploy de sua própria instância. Se você encontrar uma instância pública hospedada por outro desenvolvedor, pode usá-la livremente!
-
-**Como usar uma instância pública:**
-
-1. Encontre a URL da instância (ex: `https://github-trophys-abc.vercel.app`)
-2. Use no seu README:
-
-```markdown
-![GitHub Trophys](https://github-trophys-abc.vercel.app/api/trophy/SEU_USERNAME/svg)
-```
-
-**⚠️ Importante:** 
-- Instâncias públicas podem ter limites de rate da GitHub API
-- Podem não estar sempre disponíveis
-- Para uso em produção confiável, recomendamos fazer seu próprio deploy (é gratuito e leva menos de 5 minutos!)
-
-**💡 Dica:** Se você fez deploy de uma instância pública e quer compartilhar, adicione uma seção no README com a URL para que outros possam usar!
-
----
-
-## 🛠️ Desenvolvimento
-
-### Estrutura do Projeto
-
-```
-github-trophys/
-├── app/
-│   ├── api/
-│   │   └── trophy/
-│   │       └── [username]/
-│   │           ├── route.ts          # API JSON
-│   │           └── svg/
-│   │               └── route.ts      # API SVG
-│   ├── page.tsx                       # Interface web
-│   └── layout.tsx                     # Layout principal
-├── components/
-│   └── TrophySVG.tsx                  # Componentes SVG
-├── lib/
-│   ├── github-api.ts                  # Integração GitHub API
-│   └── trophy-levels.ts               # Sistema de níveis
-└── README.md
-```
-
-### Scripts Disponíveis
-
-```bash
-# Desenvolvimento
-npm run dev
-
-# Build de produção
-npm run build
-
-# Iniciar servidor de produção
-npm start
-
-# Linting
-npm run lint
-```
-
-### Customização
-
-Você pode personalizar os níveis e cores editando `lib/trophy-levels.ts`:
-
-```typescript
-export const trophyConfigs: Record<TrophyCategory, TrophyConfig[]> = {
-  commits: [
-    { category: 'commits', level: 'basic', threshold: 100, color: '#9e9e9e', ... },
-    // Adicione seus próprios níveis aqui
-  ],
-  // ...
-};
-```
-
-### Variáveis de Ambiente
-
-Crie um arquivo `.env.local` na raiz do projeto:
-
-```env
-# URL da aplicação (opcional)
-NEXT_PUBLIC_APP_URL=https://github-trophys-abc.vercel.app
-
-# Token GitHub (opcional - aumenta rate limit de 60 para 5000 req/hora)
-GITHUB_TOKEN=ghp_seu_token_aqui
-```
-
-**Como gerar um token GitHub:**
-
-1. Acesse [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
-2. Clique em "Generate new token (classic)"
-3. Dê um nome descritivo
-4. Clique em "Generate token"
-5. Copie o token e cole no `.env.local`
-
-**⚠️ Segurança:** Nunca commite o token no Git. O arquivo `.env.local` está no `.gitignore`.
-
-**Na Vercel:** Adicione as variáveis em Settings > Environment Variables.
-
----
-
 ## ❓ FAQ
 
-### P: Posso usar sem fazer deploy próprio?
+### P: Como uso os troféus?
 
-R: Sim! Você pode usar instâncias públicas ou fazer fork e deploy na Vercel gratuitamente.
+R: Basta adicionar a linha de código no seu README.md substituindo `SEU_USERNAME` pelo seu username do GitHub. Veja a seção [Como Usar](#-como-usar) acima.
 
 ### P: Os dados são atualizados em tempo real?
 
@@ -481,14 +331,11 @@ R: Os dados são buscados da GitHub API a cada requisição. O SVG é cacheado p
 
 ### P: Há limite de requisições?
 
-R: A GitHub API tem limite de 60 requisições/hora para IPs não autenticados. Para uso intenso, você pode:
-- Configurar um token GitHub (aumenta para 5000 req/hora)
-- Fazer deploy próprio (cada instância tem seu próprio rate limit)
-- Usar cache (os SVGs são cacheados por 1 hora)
+R: O serviço usa a GitHub API que tem limite de 60 requisições/hora por IP. Os SVGs são cacheados por 1 hora para reduzir chamadas à API.
 
-### P: Posso adicionar novos tipos de troféus?
+### P: É gratuito?
 
-R: Sim! O código é open-source. Você pode modificar `lib/trophy-levels.ts` para adicionar novas categorias.
+R: Sim! Este é um serviço público e totalmente gratuito para todos.
 
 ### P: Funciona com organizações do GitHub?
 
@@ -496,50 +343,39 @@ R: Atualmente funciona apenas com usuários individuais. Suporte para organizaç
 
 ### P: Os troféus aparecem no perfil do GitHub?
 
-R: Sim! Eles aparecem no seu README, que é exibido automaticamente no seu perfil do GitHub quando você tem um repositório com o mesmo nome do seu username (ex: `github.com/seu-usuario/seu-usuario`).
+R: Sim! Eles aparecem no seu README, que é exibido automaticamente no seu perfil do GitHub quando você tem um repositório com o mesmo nome do seu username (ex: `github.com/le0nardomartins/le0nardomartins`).
 
-### P: Outras pessoas podem usar minha instância?
+### P: Posso usar em múltiplos repositórios?
 
-R: Sim! Qualquer pessoa pode usar sua instância pública. Basta compartilhar a URL. Isso é encorajado e faz parte do espírito open-source!
+R: Sim! Você pode usar os troféus em qualquer README.md de qualquer repositório.
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Erro: "Username é obrigatório"
+### Troféus não aparecem no README
 
 - Verifique se o username está correto na URL
 - Certifique-se de que o username existe no GitHub
+- Tente acessar a URL diretamente no navegador: `https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg`
 
-### Erro: "Erro ao buscar dados do GitHub"
+### Erro ao carregar
 
-- Pode ser rate limit da GitHub API. Aguarde alguns minutos
+- Pode ser rate limit da GitHub API. Aguarde alguns minutos e tente novamente
 - Verifique sua conexão com a internet
 - Verifique se o username está correto
-
-### Troféus não aparecem no README
-
-- Verifique se a URL está correta
-- Certifique-se de que o deploy foi concluído
-- Tente acessar a URL diretamente no navegador
 
 ### SVG não carrega
 
 - Verifique se o formato da URL está correto
 - Limpe o cache do navegador
-- Verifique os logs da Vercel para erros
-
-### Token não está funcionando
-
-- Verifique se o token está correto
-- Certifique-se de que adicionou na Vercel (Settings > Environment Variables)
-- Faça um novo deploy após adicionar variáveis
+- Tente acessar a URL diretamente no navegador
 
 ---
 
 ## 🤝 Contribuindo
 
-Contribuições são muito bem-vindas! Este projeto é open-source e foi feito para a comunidade.
+Este projeto é open-source! Contribuições são muito bem-vindas.
 
 ### Como Contribuir
 
@@ -549,34 +385,14 @@ Contribuições são muito bem-vindas! Este projeto é open-source e foi feito p
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-### Padrões de Código
-
-- Use TypeScript
-- Siga o estilo de código existente
-- Adicione comentários para código complexo
-- Mantenha funções pequenas e focadas
-- Use nomes descritivos para variáveis e funções
-
-### Mensagens de Commit
-
-Use mensagens descritivas seguindo o padrão:
-- `feat:` para novas features
-- `fix:` para correções de bugs
-- `docs:` para documentação
-- `style:` para formatação
-- `refactor:` para refatoração
-- `test:` para testes
-
 ### Ideias de Contribuições
 
 - ✨ Novas categorias de troféus
 - 🎨 Melhorias no design dos SVGs
 - 📊 Novas métricas e estatísticas
 - 🌐 Suporte para organizações
-- 🔐 Autenticação com GitHub token
-- 📱 Interface mobile melhorada
+- 📱 Melhorias na interface web
 - 🌍 Traduções para outros idiomas
-- 🧪 Testes automatizados
 
 ---
 

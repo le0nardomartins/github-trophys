@@ -98,9 +98,8 @@ export function TrophySVG({ trophy, size = 200 }: TrophySVGProps) {
         fontSize="11"
         textAnchor="middle"
         fill="rgba(255, 255, 255, 0.9)"
-        textTransform="uppercase"
       >
-        {trophy.level}
+        {trophy.level.toUpperCase()}
       </text>
     </svg>
   );
