@@ -55,7 +55,7 @@ export async function fetchUserRepositories(username: string): Promise<any[]> {
     }
 
     const data = await response.json();
-    
+
     if (data.length === 0) {
       hasMore = false;
     } else {
@@ -111,7 +111,7 @@ export async function fetchContributions(username: string): Promise<number> {
     }
 
     const events = await response.json();
-    
+
     // Contar eventos de push (commits)
     const pushEvents = events.filter((event: any) => event.type === 'PushEvent');
     const commits = pushEvents.reduce((sum: number, event: any) => {

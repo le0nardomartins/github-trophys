@@ -23,14 +23,14 @@ export default function Home() {
 
     try {
       const response = await fetch(`/api/trophy/${username}`);
-      
+
       if (!response.ok) {
         const data = await response.json();
         throw new Error(data.error || 'Erro ao buscar dados');
       }
 
       const data = await response.json();
-      
+
       // Converter os dados de volta para TrophyConfig
       const trophyConfigs: TrophyConfig[] = data.trophies.map((t: any) => ({
         category: t.category,
@@ -71,8 +71,12 @@ export default function Home() {
             type="text"
             placeholder="Digite seu username do GitHub..."
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+            onChange={(e: any) => setUsername(e.target.value)}
+            onKeyPress={(e: any) => {
+              if (e.key === 'Enter') {
+                handleSearch();
+              }
+            }}
             className="search-input"
           />
           <button
@@ -129,15 +133,15 @@ export default function Home() {
           <div className="embed-section">
             <h3>📝 Como usar no seu README</h3>
             <p>Adicione este código no seu README.md para exibir seus troféus:</p>
-            
+
             <div className="code-block">
               <code>
                 {`![GitHub Trophys](https://sua-url.vercel.app/api/trophy/${username}/svg)`}
               </code>
             </div>
-            <div className="code-block" style={{marginTop: '0.5rem', fontSize: '0.85rem', opacity: 0.8}}>
+            <div className="code-block" style={{marginTop: '0.5rem', fontSize: '0.85rem', opacity: 0.9}}>
               <code>
-                {`URL desta instância: ${process.env.NEXT_PUBLIC_APP_URL || 'https://sua-url.vercel.app'}/api/trophy/${username}/svg`}
+                {`URL desta instância: https://github-trophys-pdd5.vercel.app/api/trophy/${username}/svg`}
               </code>
             </div>
 

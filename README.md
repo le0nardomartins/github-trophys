@@ -25,6 +25,19 @@ GitHub Trophys é um serviço público que gera troféus SVG personalizados base
 - ⚡ **API RESTful**: Endpoints completos para integração
 - 🌐 **100% Gratuito**: Serviço público disponível para todos
 
+### 🏆 Troféus Disponíveis
+
+O sistema possui **8 categorias** de troféus, cada uma com **6 níveis** de dificuldade:
+
+1. **📝 Commits** - Baseado no total de commits realizados
+2. **⭐ Stars** - Baseado no total de estrelas recebidas nos repositórios
+3. **📦 Repositories** - Baseado no número de repositórios públicos criados
+4. **👥 Followers** - Baseado no número de seguidores no GitHub
+5. **🔥 Contributions** - Baseado no total de contribuições (commits, PRs, issues)
+6. **🔀 Pull Requests** - Baseado no número de pull requests criados
+7. **🐛 Issues** - Baseado no número de issues criadas
+8. **💻 Developer Level** - Nível geral calculado com base em todas as métricas combinadas
+
 ---
 
 ## 🚀 Como Usar
@@ -34,12 +47,12 @@ GitHub Trophys é um serviço público que gera troféus SVG personalizados base
 Adicione esta linha no seu `README.md`:
 
 ```markdown
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/SEU_USERNAME/svg)
 ```
 
 **Exemplo real:**
 ```markdown
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/le0nardomartins/svg)
 ```
 
 ### Personalização
@@ -47,13 +60,13 @@ Adicione esta linha no seu `README.md`:
 #### Exibir apenas o nível do desenvolvedor
 
 ```markdown
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg?format=single)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/SEU_USERNAME/svg?format=single)
 ```
 
 #### Exibir troféu de categoria específica
 
 ```markdown
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg?category=commits)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/SEU_USERNAME/svg?category=commits)
 ```
 
 **Categorias disponíveis:**
@@ -69,7 +82,7 @@ Adicione esta linha no seu `README.md`:
 ```markdown
 # Meu Perfil
 
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/SEU_USERNAME/svg)
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SEU_USERNAME)
 ```
@@ -87,7 +100,7 @@ Desenvolvedor Full Stack
 
 ## 🏆 Troféus GitHub
 
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/joaosilva/svg)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/joaosilva/svg)
 ```
 
 ### Exemplo 2: README Completo
@@ -99,7 +112,7 @@ Desenvolvedor Full Stack
 
 ## 🏆 Troféus GitHub
 
-![GitHub Trophys](https://github-trophys.vercel.app/api/trophy/mariasantos/svg)
+![GitHub Trophys](https://github-trophys-pdd5.vercel.app/api/trophy/mariasantos/svg)
 
 ## 📊 Estatísticas
 
@@ -111,7 +124,7 @@ Desenvolvedor Full Stack
 ```markdown
 ## Meu Nível de Desenvolvedor
 
-![Dev Level](https://github-trophys.vercel.app/api/trophy/meuusuario/svg?format=single&category=developer-level)
+![Dev Level](https://github-trophys-pdd5.vercel.app/api/trophy/meuusuario/svg?format=single&category=developer-level)
 ```
 
 ### Exemplo 4: Múltiplos Troféus
@@ -120,10 +133,10 @@ Desenvolvedor Full Stack
 ## Minhas Conquistas
 
 **Commits:**
-![Commits](https://github-trophys.vercel.app/api/trophy/meuusuario/svg?format=single&category=commits)
+![Commits](https://github-trophys-pdd5.vercel.app/api/trophy/meuusuario/svg?format=single&category=commits)
 
 **Stars:**
-![Stars](https://github-trophys.vercel.app/api/trophy/meuusuario/svg?format=single&category=stars)
+![Stars](https://github-trophys-pdd5.vercel.app/api/trophy/meuusuario/svg?format=single&category=stars)
 ```
 
 ### Exemplo 5: Layout em Grid
@@ -135,15 +148,15 @@ Desenvolvedor Full Stack
   <tr>
     <td align="center">
       <strong>Nível Geral</strong><br/>
-      <img src="https://github-trophys.vercel.app/api/trophy/usuario/svg?format=single&category=developer-level" alt="Dev Level"/>
+      <img src="https://github-trophys-pdd5.vercel.app/api/trophy/usuario/svg?format=single&category=developer-level" alt="Dev Level"/>
     </td>
     <td align="center">
       <strong>Commits</strong><br/>
-      <img src="https://github-trophys.vercel.app/api/trophy/usuario/svg?format=single&category=commits" alt="Commits"/>
+      <img src="https://github-trophys-pdd5.vercel.app/api/trophy/usuario/svg?format=single&category=commits" alt="Commits"/>
     </td>
     <td align="center">
       <strong>Stars</strong><br/>
-      <img src="https://github-trophys.vercel.app/api/trophy/usuario/svg?format=single&category=stars" alt="Stars"/>
+      <img src="https://github-trophys-pdd5.vercel.app/api/trophy/usuario/svg?format=single&category=stars" alt="Stars"/>
     </td>
   </tr>
 </table>
@@ -156,7 +169,7 @@ Desenvolvedor Full Stack
 ### Base URL
 
 ```
-https://github-trophys.vercel.app
+https://github-trophys-pdd5.vercel.app
 ```
 
 ### 1. GET `/api/trophy/[username]`
@@ -170,7 +183,7 @@ GET /api/trophy/{username}
 
 **Exemplo de Requisição:**
 ```bash
-curl https://github-trophys.vercel.app/api/trophy/le0nardomartins
+curl https://github-trophys-pdd5.vercel.app/api/trophy/le0nardomartins
 ```
 
 **Exemplo de Resposta:**
@@ -225,16 +238,16 @@ GET /api/trophy/{username}/svg
 
 ```bash
 # Todos os troféus em linha
-curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg
+curl https://github-trophys-pdd5.vercel.app/api/trophy/le0nardomartins/svg
 
 # Apenas nível do desenvolvedor
-curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg?format=single
+curl https://github-trophys-pdd5.vercel.app/api/trophy/le0nardomartins/svg?format=single
 
 # Troféu de commits apenas
-curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg?category=commits
+curl https://github-trophys-pdd5.vercel.app/api/trophy/le0nardomartins/svg?category=commits
 
 # Troféu único de stars
-curl https://github-trophys.vercel.app/api/trophy/le0nardomartins/svg?format=single&category=stars
+curl https://github-trophys-pdd5.vercel.app/api/trophy/le0nardomartins/svg?format=single&category=stars
 ```
 
 **Resposta:**
@@ -242,80 +255,124 @@ Retorna um arquivo SVG que pode ser usado diretamente como imagem.
 
 ---
 
-## 🎯 Sistema de Níveis
+## 🎯 Sistema de Níveis e Critérios
 
-### Commits 📝
+### 📝 Commits
 
-| Nível | Threshold | Cor |
-|-------|-----------|-----|
-| Basic | 100+ commits | Cinza |
-| Intermediate | 500+ commits | Verde |
-| Advanced | 1000+ commits | Azul |
-| Expert | 2500+ commits | Roxo |
-| Master | 5000+ commits | Laranja |
-| Legendary | 10000+ commits | Vermelho |
+Troféus baseados no **total de commits** realizados em todos os seus repositórios.
 
-### Stars ⭐
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 100+ commits | Cinza (#9e9e9e) | 📝 |
+| 🥈 **Intermediate** | 500+ commits | Verde (#4caf50) | 📝 |
+| 🥇 **Advanced** | 1.000+ commits | Azul (#2196f3) | 📝 |
+| 💎 **Expert** | 2.500+ commits | Roxo (#9c27b0) | 📝 |
+| 👑 **Master** | 5.000+ commits | Laranja (#ff9800) | 📝 |
+| 🌟 **Legendary** | 10.000+ commits | Vermelho (#f44336) | 📝 |
 
-| Nível | Threshold | Cor |
-|-------|-----------|-----|
-| Basic | 10+ stars | Cinza |
-| Intermediate | 50+ stars | Verde |
-| Advanced | 100+ stars | Azul |
-| Expert | 500+ stars | Roxo |
-| Master | 1000+ stars | Laranja |
-| Legendary | 5000+ stars | Vermelho |
+### ⭐ Stars
 
-### Repositories 📦
+Troféus baseados no **total de estrelas** recebidas em todos os seus repositórios.
 
-| Nível | Threshold | Cor |
-|-------|-----------|-----|
-| Basic | 5+ repos | Cinza |
-| Intermediate | 15+ repos | Verde |
-| Advanced | 30+ repos | Azul |
-| Expert | 50+ repos | Roxo |
-| Master | 100+ repos | Laranja |
-| Legendary | 200+ repos | Vermelho |
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 10+ stars | Cinza (#9e9e9e) | ⭐ |
+| 🥈 **Intermediate** | 50+ stars | Verde (#4caf50) | ⭐ |
+| 🥇 **Advanced** | 100+ stars | Azul (#2196f3) | ⭐ |
+| 💎 **Expert** | 500+ stars | Roxo (#9c27b0) | ⭐ |
+| 👑 **Master** | 1.000+ stars | Laranja (#ff9800) | ⭐ |
+| 🌟 **Legendary** | 5.000+ stars | Vermelho (#f44336) | ⭐ |
 
-### Followers 👥
+### 📦 Repositories
 
-| Nível | Threshold | Cor |
-|-------|-----------|-----|
-| Basic | 10+ seguidores | Cinza |
-| Intermediate | 50+ seguidores | Verde |
-| Advanced | 100+ seguidores | Azul |
-| Expert | 500+ seguidores | Roxo |
-| Master | 1000+ seguidores | Laranja |
-| Legendary | 5000+ seguidores | Vermelho |
+Troféus baseados no **número de repositórios públicos** criados.
 
-### Contributions 🔥
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 5+ repositórios | Cinza (#9e9e9e) | 📦 |
+| 🥈 **Intermediate** | 15+ repositórios | Verde (#4caf50) | 📦 |
+| 🥇 **Advanced** | 30+ repositórios | Azul (#2196f3) | 📦 |
+| 💎 **Expert** | 50+ repositórios | Roxo (#9c27b0) | 📦 |
+| 👑 **Master** | 100+ repositórios | Laranja (#ff9800) | 📦 |
+| 🌟 **Legendary** | 200+ repositórios | Vermelho (#f44336) | 📦 |
 
-| Nível | Threshold | Cor |
-|-------|-----------|-----|
-| Basic | 100+ contribuições | Cinza |
-| Intermediate | 500+ contribuições | Verde |
-| Advanced | 1000+ contribuições | Azul |
-| Expert | 2000+ contribuições | Roxo |
-| Master | 3000+ contribuições | Laranja |
-| Legendary | 5000+ contribuições | Vermelho |
+### 👥 Followers
 
-### Developer Level 💻
+Troféus baseados no **número de seguidores** no seu perfil do GitHub.
 
-O nível do desenvolvedor é calculado com base em uma pontuação ponderada:
-- Commits × 1
-- Stars × 2
-- Repositórios × 10
-- Seguidores × 5
-- Contribuições × 1
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 10+ seguidores | Cinza (#9e9e9e) | 👥 |
+| 🥈 **Intermediate** | 50+ seguidores | Verde (#4caf50) | 👥 |
+| 🥇 **Advanced** | 100+ seguidores | Azul (#2196f3) | 👥 |
+| 💎 **Expert** | 500+ seguidores | Roxo (#9c27b0) | 👥 |
+| 👑 **Master** | 1.000+ seguidores | Laranja (#ff9800) | 👥 |
+| 🌟 **Legendary** | 5.000+ seguidores | Vermelho (#f44336) | 👥 |
 
-| Nível | Pontuação Mínima |
-|-------|------------------|
-| Basic | 0+ |
-| Intermediate | 500+ |
-| Advanced | 1500+ |
-| Expert | 3000+ |
-| Master | 6000+ |
-| Legendary | 12000+ |
+### 🔥 Contributions
+
+Troféus baseados no **total de contribuições** (commits, pull requests, issues abertas).
+
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 100+ contribuições | Cinza (#9e9e9e) | 🔥 |
+| 🥈 **Intermediate** | 500+ contribuições | Verde (#4caf50) | 🔥 |
+| 🥇 **Advanced** | 1.000+ contribuições | Azul (#2196f3) | 🔥 |
+| 💎 **Expert** | 2.000+ contribuições | Roxo (#9c27b0) | 🔥 |
+| 👑 **Master** | 3.000+ contribuições | Laranja (#ff9800) | 🔥 |
+| 🌟 **Legendary** | 5.000+ contribuições | Vermelho (#f44336) | 🔥 |
+
+### 🔀 Pull Requests
+
+Troféus baseados no **número de pull requests** criados.
+
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 10+ pull requests | Cinza (#9e9e9e) | 🔀 |
+| 🥈 **Intermediate** | 50+ pull requests | Verde (#4caf50) | 🔀 |
+| 🥇 **Advanced** | 100+ pull requests | Azul (#2196f3) | 🔀 |
+| 💎 **Expert** | 250+ pull requests | Roxo (#9c27b0) | 🔀 |
+| 👑 **Master** | 500+ pull requests | Laranja (#ff9800) | 🔀 |
+| 🌟 **Legendary** | 1.000+ pull requests | Vermelho (#f44336) | 🔀 |
+
+### 🐛 Issues
+
+Troféus baseados no **número de issues** criadas.
+
+| Nível | Critério | Cor | Ícone |
+|-------|----------|-----|-------|
+| 🥉 **Basic** | 10+ issues | Cinza (#9e9e9e) | 🐛 |
+| 🥈 **Intermediate** | 50+ issues | Verde (#4caf50) | 🐛 |
+| 🥇 **Advanced** | 100+ issues | Azul (#2196f3) | 🐛 |
+| 💎 **Expert** | 250+ issues | Roxo (#9c27b0) | 🐛 |
+| 👑 **Master** | 500+ issues | Laranja (#ff9800) | 🐛 |
+| 🌟 **Legendary** | 1.000+ issues | Vermelho (#f44336) | 🐛 |
+
+### 💻 Developer Level
+
+Nível geral do desenvolvedor calculado com base em uma **pontuação ponderada** de todas as métricas:
+
+**Fórmula de Cálculo:**
+```
+Pontuação = (Commits × 1) + (Stars × 2) + (Repositórios × 10) + (Seguidores × 5) + (Contribuições × 1)
+```
+
+| Nível | Pontuação Mínima | Cor | Ícone |
+|-------|------------------|-----|-------|
+| 🥉 **Basic** | 0+ pontos | Cinza (#9e9e9e) | 💻 |
+| 🥈 **Intermediate** | 500+ pontos | Verde (#4caf50) | 💻 |
+| 🥇 **Advanced** | 1.500+ pontos | Azul (#2196f3) | 💻 |
+| 💎 **Expert** | 3.000+ pontos | Roxo (#9c27b0) | 💻 |
+| 👑 **Master** | 6.000+ pontos | Laranja (#ff9800) | 💻 |
+| 🌟 **Legendary** | 12.000+ pontos | Vermelho (#f44336) | 💻 |
+
+**Exemplo de Cálculo:**
+- 500 commits × 1 = 500 pontos
+- 50 stars × 2 = 100 pontos
+- 10 repositórios × 10 = 100 pontos
+- 20 seguidores × 5 = 100 pontos
+- 300 contribuições × 1 = 300 pontos
+- **Total: 1.100 pontos** = 🥇 **Advanced**
 
 ---
 
@@ -357,7 +414,7 @@ R: Sim! Você pode usar os troféus em qualquer README.md de qualquer repositór
 
 - Verifique se o username está correto na URL
 - Certifique-se de que o username existe no GitHub
-- Tente acessar a URL diretamente no navegador: `https://github-trophys.vercel.app/api/trophy/SEU_USERNAME/svg`
+- Tente acessar a URL diretamente no navegador: `https://github-trophys-pdd5.vercel.app/api/trophy/SEU_USERNAME/svg`
 
 ### Erro ao carregar
 

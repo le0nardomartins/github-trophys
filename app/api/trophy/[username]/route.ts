@@ -21,12 +21,14 @@ export async function GET(
 
     // Buscar métricas do GitHub
     const metrics = await calculateGitHubMetrics(username);
-    
-    // Buscar contribuições adicionais
-    const contributions = await fetchContributions(username);
-    if (contributions > 0) {
-      metrics.commits = contributions;
-      metrics.contributions = contributions * 1.5;
+
+    // Buscar contribuições reais (commits do último ano)
+    const realCommits = await fetchContributions(username);
+    if (realCommits > 0) {
+      metrics.commits = realCommits;
+      // Contribuições = commits + estimativa de PRs e issues
+      // Usar o valor real de commits como base principal
+      metrics.contributions = Math.max(metrics.contributions, realCommits);
     }
 
     // Calcular todos os troféus alcançados
